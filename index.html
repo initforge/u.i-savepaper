@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Saver – Anh hùng giấy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar__content">
+                <div class="navbar__logo">
+                    <h1 class="navbar__logo-main">PAPER SAVER</h1>
+                    <p class="navbar__logo-sub">Tiết kiệm giấy, thấy tương lai</p>
+                </div>
+                <nav class="navbar__menu" id="navbarMenu">
+                    <a href="#hero" class="navbar__link active">Trang chủ</a>
+                    <a href="#about" class="navbar__link">Về dự án</a>
+                    <a href="#activities" class="navbar__link">Hoạt động</a>
+                    <a href="#features" class="navbar__link">Điểm nổi bật</a>
+                    <a href="#reviews" class="navbar__link">Đánh giá</a>
+                    <a href="#signup" class="navbar__link">Đăng ký</a>
+                    <a href="#contact" class="navbar__link">Liên hệ</a>
+                </nav>
+                <button class="navbar__toggle" id="navbarToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <p class="hero__subheading">Nhóm 1 – Lớp FLF1007-01</p>
+                    <h2 class="hero__heading">PAPER SAVER –<br>ANH HÙNG GIẤY</h2>
+                    <p class="hero__description">
+                        Dự án nhằm giảm thiểu tình trạng in ấn, photo tài liệu lãng phí của sinh viên Trường Đại học Ngoại Ngữ – ĐHQGHN, nâng cao ý thức sử dụng và tái chế giấy.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#signup" class="btn btn-primary">Đăng ký tham gia ngay</a>
+                        <a href="#about" class="btn btn-secondary">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="taped-photo">
+                        <!-- Placeholder image - replace with actual hero illustration -->
+                        <img src="https://via.placeholder.com/600x400/E8F5E9/4CAF50?text=Paper+Hero" alt="Paper Saver Hero">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__background"></div>
+        <!-- Decorative Elements -->
+        <div class="decorative-elements">
+            <div class="leaf leaf--1"></div>
+            <div class="leaf leaf--2"></div>
+            <div class="leaf leaf--3"></div>
+            <div class="leaf leaf--4"></div>
+            <div class="paper-plane paper-plane--1"></div>
+            <div class="paper-plane paper-plane--2"></div>
+            <div class="tree-silhouette tree-silhouette--left"></div>
+            <div class="tree-silhouette tree-silhouette--right"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__text">
+                    <h2 class="section__title">VỀ A++++++</h2>
+                    <h3 class="section__subtitle">CHÚNG TỚ LÀ AI?</h3>
+                    <div class="about__description">
+                        <p>
+                            Dự án "Paper Saver – Anh hùng giấy" do nhóm A++++++ gồm 6 thành viên đều có tên bắt đầu bằng chữ A, đến từ Trường Đại học Ngoại Ngữ – ĐHQGHN thực hiện.
+                        </p>
+                        <p>
+                            Dự án được thai nghén từ đầu tháng 9, diễn ra trong 4 tháng, hướng tới lan tỏa thông điệp tiết kiệm giấy.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__right">
+                    <div class="about__members card taped-photo">
+                        <h4 class="about__members-title">Các thành viên nhóm</h4>
+                        <ul class="about__members-list">
+                            <li>Nguyễn Chúc An – 20J2 – 20040011</li>
+                            <li>Phạm Hà An – 17E7 – 17040027</li>
+                            <li>Vũ Mạnh An – 20J3 – 20040976</li>
+                            <li>Hà Thị Vân Anh – 20J6 – 20040979</li>
+                            <li>Bùi Thị Mai Anh – 20J2 – 18041303</li>
+                            <li>Đỗ Thị Lan Anh – 17E13 – 17040547</li>
+                        </ul>
+                    </div>
+                    <div class="about__video">
+                        <h4 class="about__video-title">Video: Tổng quan về dự án</h4>
+                        <div class="about__video-wrapper">
+                            <!-- Replace with actual YouTube embed URL -->
+                            <iframe 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Video tổng quan về dự án Paper Saver"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities section">
+        <div class="section-decorations">
+            <div class="floating-leaf floating-leaf--1"></div>
+            <div class="floating-leaf floating-leaf--2"></div>
+            <div class="floating-leaf floating-leaf--3"></div>
+        </div>
+        <div class="container">
+            <h2 class="section__title">CÁC HOẠT ĐỘNG CỦA DỰ ÁN</h2>
+            <p class="section__subtitle">Tham gia cùng chúng tớ để lan tỏa thông điệp bảo vệ môi trường</p>
+            <div class="activities__grid">
+                <div class="activity-card card">
+                    <div class="activity-card__icon">🌱</div>
+                    <h3 class="activity-card__title">Gom giấy, gom rác xanh</h3>
+                    <p class="activity-card__description">
+                        Hoạt động thu gom giấy đã sử dụng và rác xanh từ sinh viên trong trường. Chúng tớ tổ chức các điểm thu gom tại các khu vực tập trung, giúp việc tái chế trở nên dễ dàng và thuận tiện hơn.
+                    </p>
+                </div>
+                <div class="activity-card card">
+                    <div class="activity-card__icon">💡</div>
+                    <h3 class="activity-card__title">Hoạt động 1: Mình tiết kiệm giấy như thế nào?</h3>
+                    <p class="activity-card__description">
+                        Chia sẻ các mẹo và phương pháp tiết kiệm giấy hiệu quả trong học tập và cuộc sống hàng ngày. Từ việc in ấn thông minh đến sử dụng giấy hai mặt, chúng tớ giúp bạn tối ưu hóa việc sử dụng giấy.
+                    </p>
+                </div>
+                <div class="activity-card card">
+                    <div class="activity-card__icon">🎨</div>
+                    <h3 class="activity-card__title">Hoạt động 2</h3>
+                    <p class="activity-card__description">
+                        Workshop và các buổi chia sẻ về tầm quan trọng của việc tiết kiệm giấy. Chúng tớ tổ chức các buổi nói chuyện với chuyên gia và các hoạt động thực hành để nâng cao nhận thức về môi trường.
+                    </p>
+                </div>
+                <div class="activity-card card">
+                    <div class="activity-card__icon">♻️</div>
+                    <h3 class="activity-card__title">Hoạt động 3: Tớ làm gì với giấy tái chế?</h3>
+                    <p class="activity-card__description">
+                        Hướng dẫn các cách sáng tạo để tái chế giấy thành những sản phẩm hữu ích. Từ làm đồ trang trí đến các vật dụng hàng ngày, khám phá tiềm năng vô hạn của giấy tái chế.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="section-decorations">
+            <div class="floating-leaf floating-leaf--4"></div>
+            <div class="floating-leaf floating-leaf--5"></div>
+        </div>
+        <div class="container">
+            <div class="features__content">
+                <div class="features__text">
+                    <h2 class="section__title">ĐIỂM NỔI BẬT CỦA DỰ ÁN</h2>
+                    <ul class="features__list">
+                        <li class="features__item">
+                            <strong>Thông tin trực quan</strong> – Website cung cấp kiến thức về giấy, môi trường bằng hình ảnh, infographic, tip ngắn gọn.
+                        </li>
+                        <li class="features__item">
+                            <strong>Thông tin cập nhật thường xuyên</strong> – Tin tức, hoạt động về giấy/môi trường được cập nhật liên tục.
+                        </li>
+                        <li class="features__item">
+                            <strong>Gắn kết cộng đồng sinh viên</strong> – Tạo sân chơi cho sinh viên chia sẻ và tham gia hoạt động bảo vệ môi trường.
+                        </li>
+                    </ul>
+                </div>
+                <div class="features__images">
+                    <div class="polaroid-stack">
+                        <div class="polaroid taped-photo" style="transform: rotate(-5deg); z-index: 3;">
+                            <!-- Replace with actual image -->
+                            <img src="https://via.placeholder.com/300x300/FFFFFF/4CAF50?text=Image+1" alt="Feature 1">
+                        </div>
+                        <div class="polaroid taped-photo" style="transform: rotate(3deg); z-index: 2; margin-top: -20px; margin-left: 20px;">
+                            <!-- Replace with actual image -->
+                            <img src="https://via.placeholder.com/300x300/FFFFFF/4CAF50?text=Image+2" alt="Feature 2">
+                        </div>
+                        <div class="polaroid taped-photo" style="transform: rotate(-2deg); z-index: 1; margin-top: -20px; margin-left: 40px;">
+                            <!-- Replace with actual image -->
+                            <img src="https://via.placeholder.com/300x300/FFFFFF/4CAF50?text=Image+3" alt="Feature 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews section">
+        <div class="section-decorations">
+            <div class="paper-sheet paper-sheet--1"></div>
+            <div class="paper-sheet paper-sheet--2"></div>
+        </div>
+        <div class="container">
+            <h2 class="section__title">ĐÁNH GIÁ</h2>
+            <p class="section__subtitle">Cảm nhận từ những người đã đồng hành cùng Paper Saver</p>
+            <div class="reviews__grid">
+                <div class="review-card card">
+                    <div class="review-card__quote">"</div>
+                    <p class="review-card__text">
+                        Website đẹp, thẩm mỹ, giúp hiểu thêm nhiều thông tin hữu ích về môi trường và giấy.
+                    </p>
+                    <div class="review-card__author">
+                        <strong>Nguyễn Thị Thu Hoài</strong>
+                    </div>
+                </div>
+                <div class="review-card card">
+                    <div class="review-card__quote">"</div>
+                    <p class="review-card__text">
+                        Nhờ website và hoạt động của dự án mà bản thân và bạn bè ý thức hơn trong việc sử dụng và tiết kiệm giấy.
+                    </p>
+                    <div class="review-card__author">
+                        <strong>Huỳnh Minh Khang</strong>
+                    </div>
+                </div>
+                <div class="review-card card">
+                    <div class="review-card__quote">"</div>
+                    <p class="review-card__text">
+                        Ý tưởng, thông tin và hoạt động rất thiết thực, ý nghĩa, giúp hiểu tầm quan trọng của việc tiết kiệm và tái chế giấy.
+                    </p>
+                    <div class="review-card__author">
+                        <strong>Trần Quỳnh Anh</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup section">
+        <div class="container">
+            <div class="signup__content">
+                <div class="signup__text">
+                    <h2 class="section__title">Đăng ký tham gia hoạt động</h2>
+                    <p class="signup__description">
+                        Mời sinh viên đăng ký tham gia các hoạt động của Paper Saver để cùng lan tỏa thông điệp "Tiết kiệm giấy, thấy tương lai".
+                    </p>
+                    <ul class="signup__benefits">
+                        <li>Mở rộng mối quan hệ với cộng đồng sinh viên</li>
+                        <li>Đóng góp tích cực cho môi trường</li>
+                        <li>Trải nghiệm dự án thực tế ý nghĩa</li>
+                    </ul>
+                </div>
+                <div class="signup__form-wrapper">
+                    <form class="signup__form" id="signupForm">
+                        <div class="form-group">
+                            <label for="name">Họ và tên <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Lớp/Khoa</label>
+                            <input type="text" id="class" name="class">
+                        </div>
+                        <div class="form-group">
+                            <label>Hoạt động bạn quan tâm</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="activity" value="gom-giay">
+                                    <span>Gom giấy, gom rác xanh</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="activity" value="workshop">
+                                    <span>Workshop tiết kiệm giấy</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="activity" value="tai-che">
+                                    <span>Tái chế giấy sáng tạo</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="activity" value="khac" id="activityOther">
+                                    <span>Khác</span>
+                                </label>
+                            </div>
+                            <textarea id="otherActivity" name="otherActivity" placeholder="Vui lòng mô tả..." style="display: none; margin-top: 10px;"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Lời nhắn cho đội dự án</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Gửi đăng ký</button>
+                    </form>
+                    <div class="signup__thank-you" id="thankYouPanel" style="display: none;">
+                        <div class="thank-you__icon">✓</div>
+                        <h3 class="thank-you__title">Cảm ơn bạn đã đăng ký!</h3>
+                        <p class="thank-you__message">Chúng tớ sẽ liên hệ với bạn sớm nhất có thể ❤️</p>
+                        <button class="btn btn-secondary thank-you__button" id="submitAnother">Đăng ký thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact__content">
+                <div class="contact__map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.885306879889!2d105.77965217508117!3d21.037274680614182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3554e85339%3A0x19eea49931db5e52!2zVMOyYSBOaMOgIFbEg24gSMOzYSBVbGlzIC1TdW53YWggxJBIIE5nb-G6oWkgTmfhu68!5e0!3m2!1svi!2sus!4v1764745339330!5m2!1svi!2sus"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="contact__info">
+                    <h2 class="contact__title">Liên hệ</h2>
+                    <div class="contact__details">
+                        <p class="contact__line">TRƯỜNG ĐẠI HỌC NGOẠI NGỮ - ĐHQGHN</p>
+                        <p class="contact__line">ĐỘI DỰ ÁN "PAPER SAVER"</p>
+                        <p class="contact__line">Địa chỉ: Số 1 Phạm Văn Đồng, Cầu Giấy, Hà Nội</p>
+                        <p class="contact__line">SĐT: 0902220555</p>
+                        <p class="contact__line">Email: aplus.ict.010601@gmail.com</p>
+                    </div>
+                    <div class="contact__logos">
+                        <div class="contact__logo taped-photo">
+                            <!-- Replace with actual ULIS logo -->
+                            <img src="https://via.placeholder.com/150x150/FFFFFF/4CAF50?text=ULIS+Logo" alt="ULIS Logo">
+                        </div>
+                        <div class="contact__logo taped-photo">
+                            <!-- Replace with actual Paper Saver logo -->
+                            <img src="https://via.placeholder.com/150x150/FFFFFF/4CAF50?text=Paper+Saver" alt="Paper Saver Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <button class="footer__back-to-top btn btn-secondary" id="backToTop">Lên đầu trang</button>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast__content">
+            <span class="toast__message" id="toastMessage"></span>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
